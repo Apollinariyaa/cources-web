@@ -10,7 +10,7 @@
                     font-size: x-large;
                     font-style: italic;
                     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
-            Не хочу жениться - хочу учиться
+            Добро пожаловать на нашу онлайн-платформу образования!
         </p>
     </@k.page_index>
 </@c.page>
