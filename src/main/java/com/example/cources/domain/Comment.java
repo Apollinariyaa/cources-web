@@ -13,7 +13,7 @@ public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    @NotBlank(message = "Текст не может быть пустым")
+    @NotBlank(message = "Поле не может быть пустым")
     private String text;
 
     @ManyToOne(optional = false)

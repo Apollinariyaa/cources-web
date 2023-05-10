@@ -7,7 +7,7 @@
             <strong>Название:</strong><input type="text" required="true" minlength="8" name="name">
             <strong>Дата создания:</strong><input type="date" required="true" name="date">
             <strong>Стоимость:</strong><input type="number" required="true" name="cost" min="1">
-            <#if springMacroRequestContext.requestUri?contains("/add-suuply")>
+            <#if springMacroRequestContext.requestUri?contains("/add-supply")>
                 <strong>Количество задач:</strong><input type="number" required="true" min="1" name="count">
             <#else >
                 <input type="hidden" name="count" value="0">
