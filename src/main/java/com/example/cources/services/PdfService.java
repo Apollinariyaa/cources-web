@@ -33,7 +33,7 @@ public class PdfService {
     public String createQR(String content, Long id){
         try {
             Document document = new Document(new Rectangle(135, 135));
-            String filename = "src/main/java/com/example/airport/static/qr" + id + ".pdf";
+            String filename = "src/main/java/com/example/cources/static/qr" + id + ".pdf";
             PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(filename));
             document.open();
             BarcodeQRCode my_code = new BarcodeQRCode(content, 1, 1, null);
@@ -80,7 +80,7 @@ public class PdfService {
                 * elem.getCard().getShopElement().getCost()) + '\n' +
                 "Count: " + elem.getCard().getCount() + '\n' +
                 "Credentials : " + elem.getCredentials()  + '\n' +
-                "Adress : " + elem.getAdress();
+                "email : " + elem.getAdress();
 
         content = transliteration(content);
 

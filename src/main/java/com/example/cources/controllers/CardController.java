@@ -52,11 +52,11 @@ public class CardController {
 
     @PostMapping("/buy/{card}")
     public String postBuyCard(@PathVariable Card card,
-                              @RequestParam String passportId,
+                              @RequestParam String adress,
                               @RequestParam String credentials,
                               Model model){
 
-        boughtRepo.save(new Bought(card, passportId, credentials, new Date()));
+        boughtRepo.save(new Bought(card, adress, credentials, new Date()));
         return "redirect:/cards";
     }
 
